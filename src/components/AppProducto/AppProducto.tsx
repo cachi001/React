@@ -12,7 +12,7 @@ export const AppProducto = () => {
     const [productos, setProductos] = useState<ItemProducto[]>([])
     
     const handleAgregarProducto = (nuevoProducto: ItemProducto) => {
-        setProductos((prev) => [...productos, nuevoProducto]);
+        setProductos((prev) => [...prev, nuevoProducto]);
     }
     return (
         <div>
